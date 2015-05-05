@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+red='\033[0;31m'
+blue='\033[0;34m'
+import time
+
+seconds = 1
+
+while True:
+    print(str(seconds) + '' + red + ' sec' + blue + 'onds')
+    time.sleep(1)
+    seconds += 1

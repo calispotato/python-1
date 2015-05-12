@@ -2,10 +2,31 @@
 red='\033[0;31m'
 blue='\033[0;34m'
 import time
-
-seconds = 1
-
+import colors as c
+days = 0
+hours = 0
+minutes = 0
+seconds = 0
+hundredths = 0
+mesg = c.clear + red + '[control c to stop]' + c.reset
 while True:
-    print(str(seconds) + '' + red + ' sec' + blue + 'onds')
-    time.sleep(1)
-    seconds += 1
+    print(mesg + '{}-{}:{}:{}.{}'.format(days,hours,minutes,seconds,hundredths))
+    print(days)
+    print(hours)
+    print(minutes)
+    print(seconds)
+    print(hundredths)
+    time.sleep(0.01)
+    hundredths += 1
+    if hundredths == 100:
+        hundredths = 0
+        seconds += 1
+    if seconds == 60:
+        minutes += 1
+        seconds = 0
+    if minutes == 60:
+        hours += 1
+        minutes = 0
+    if hours == 24:
+        days += 1
+        hours = 0

@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+import colors as c
+import time as t
+snake = '''
+  _______  _____  ___        __       __   ___  _______  
+ /"       )(\"   \|"  \      /""\     |/"| /  ")/"     "| 
+(:   \___/ |.\\   \    |    /    \    (: |/   /(: ______) 
+ \___  \   |: \.   \\  |   /' /\  \   |    __/  \/    |   
+  __/  \\  |.  \    \. |  //  __'  \  (// _  \  // ___)_  
+ /" \   :) |    \    \ | /   /  \\  \ |: | \  \(:      "| 
+(_______/   \___|\____\)(___/    \___)(__|  \__)\_______) 
+
+'''
+for count in range(4):
+    for count in range (11):
+        print(count + 1)
+        print(c.red + 'bad' + c.green + 'ge' + c.cyan + 'rs')
+        t.sleep(0.5)
+    for count in range (2):
+        print(count + 1)
+        print(c.red + 'muusshh' + c.orange + 'roomm' + c.reset)
+        t.sleep(0.6)
+    for count in range(2):
+        print(count + 1)
+        print(snake)
+        t.sleep(0.7)

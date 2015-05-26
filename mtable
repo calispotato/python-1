@@ -1,0 +1,12 @@
+#!/usr/bin/env python3
+import colors as c
+
+print(c.clear + '''
+welcome to the multiplication tables
+''' + c.reset)
+
+number = input('which number?')
+print('table for {}:'.format(number))
+for multiplier in range(13,0,-1):
+    answer = multiplier * int(number)
+    print(c.red + '{} x {} = {}'.format(number,multiplier,answer))

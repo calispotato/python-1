@@ -10,7 +10,7 @@ def q1():
     if answer == 'pink':
         print('and what a lovely color it is')
         return True
-    print 'that is incorrect'
+    print ('that is incorrect')
     return False
 def q2():
     answer = ask('where are the dancing')
@@ -26,3 +26,7 @@ def q3():
         return True
     print('smile more')
     return False
+
+q1()
+q2()
+q3()

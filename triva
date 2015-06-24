@@ -1,9 +1,48 @@
 #!/usr/bin/env python3
 
 import colors as c
-from utills import ask
+from utils import ask
 
-print('welcome 2 triva!')
-
+print(c.red + 'welcome 2 trivia!*hint no capital letters.' + c.reset)
+print(c.orange + 'control c to quit' + c.reset)
+def ask(question):
+    print(question)
+    answer = input(c.green + '> ')
+    print(c.reset)
+    return answer
+def q1():
     answer = ask('who is on the two dollar bill?')
+    if answer == 'thomas jefferson':
+        print('correct')
+        return True
+    print('incorrect')
+    return False
 
+def q2():
+    answer = ask('how many pawns are there on a chessboard?')
+    if answer == '16':
+        print('correct')
+        return True
+    print('incorrect')
+    return False
+
+def q3():
+    answer = ask('what is the capital of fiji?')
+    if answer == 'suva':
+        print('correct')
+        return True
+    print('incorrect')
+    return False
+
+def q4():
+    answer = ask('what is the smallest kind of star destroyer from the original star wars?')
+    if answer == 'victory class':
+        print('correct')
+        return True
+        print(c.yellow + 'congradulations you have finished trivia! yay!')
+    print('incorrect')
+    return False
+q1()
+q2()
+q3()
+q4()

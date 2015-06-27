@@ -2,7 +2,7 @@
 
 import colors as c
 import fluffy as quiz
-
+import random 
 
 print(c.clear + quiz.intro) 
 

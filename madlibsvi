@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+import colors as c
+from utils import ask
+
+text = '''
+My name is {name} and i enjoy {noun}. I have not taken a piture in a while and
+I have since becone {plural verb}. final potato how many pankaces fit on the roof
+{answer}
+'''
+
+words = { 
+    "name" : None,
+    "noun" : None,
+    "plural verb" : None,
+    "answer" : None
+}
+
+for keyword in words:
+    words[keyword] = ask(keyword.title().rstrip('0123456789')+ ': ')
+
+print(c.clear + text.format(**words))
+

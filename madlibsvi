@@ -3,12 +3,17 @@
 import colors as c
 from utils import ask
 
-text = '''
+text = '''how many pancakes fit on the roof that day
+
 My name is {name} and i enjoy {noun}. I have not taken a piture in a while and
-I have since becone {plural verb}. final potato how many pankaces fit on the roof
+I have since becone {plural verb}. how many pankaces fit on the roof
 {answer}
 '''
 
+lines = text.splitlines()
+title = lines[0]
+text = "\n".join(lines[1:])
+print(c.yellow + title)
 words = { 
     "name" : None,
     "noun" : None,

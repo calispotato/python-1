@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+
+import random as r
+import colors as c
+import time
+
+dice = []
+
+dice.append('''
+ -------
+|       |
+|   .   |
+|       |
+ -------
+ ''')
+
+dice.append('''
+ -------
+| .     |
+|       |
+|     . |
+ -------
+ ''')
+ 
+dice.append('''
+ -------
+|.      |
+|   .   |
+|      .|
+ -------
+ ''')
+
+
+dice.append('''
+ -------
+|.     .|
+|       |
+|.     .|
+ -------
+ ''')
+
+
+dice.append('''
+ -------
+|.     .|
+|   .   |
+|.     .|
+ -------
+ ''')
+
+dice.append('''
+ -------
+|.     .|
+|.     .|
+|.     .|
+ -------
+ ''')
+print(c.clear)
+for n in  range(6):
+    print(.clear + c.red + dice[n] + c.reset, end="")
+    time.sleep(1)
+

@@ -57,6 +57,6 @@ dice.append('''
  ''')
 print(c.clear)
 for n in  range(6):
-    print(.clear + c.red + dice[n] + c.reset, end="")
+    print(c.clear + c.red + dice[n] + c.reset, end="")
     time.sleep(1)
 

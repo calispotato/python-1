@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+import colors as c
+from utils import ask
+
+q1 = print(c.blue + 'do you like waffles' + c.clear)
+
+input('> ')
+
+if q1 == 'no':
+    print('well i do')

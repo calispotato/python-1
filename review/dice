@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+import colors as c
+import time as t
+sides = []
+
+sides.append('''
+1
+ ''')
+
+sides.append('''
+2
+''')
+
+sides.append('''
+ 3
+''')
+
+sides.append('''
+ 4
+''')
+ 
+sides.append('''
+ 5
+''')
+
+sides.append('''
+ 6
+''')
+for n in range(6):
+    print(c.clear + c.red

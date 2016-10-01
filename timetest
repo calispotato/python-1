@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+import colors as c
+import time as t
+
+for count in range(2):
+   print(count + 1)
+   print(c.red + "hi " + c.green + "how are you?")
+   t.sleep(0.5)

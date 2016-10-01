@@ -4,6 +4,6 @@ import colors as c
 import time as t
 
 for count in range(2):
-   print(c.green + count + 1)
+   print(count + 1)
    print(c.red + "hi " + c.green + "how are you?")
    t.sleep(0.5)

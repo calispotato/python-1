@@ -1,0 +1,4 @@
+#!/usr/bin/env python
+
+import colors as c
+print(c.red + 'hello world!')
